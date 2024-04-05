@@ -14,7 +14,7 @@ on:
 
 env:
   MANIFEST: repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11-deprecated
-  DEVICE: KD7
+  DEVICE: Realme Narzo 50a
   DT_LINK: https://github.com/Badmaneers/rmx-3430-twrp-tree
   DT_PATH: device/realme/oplus_mssi_64_cn
   TARGET: recoveryimage
