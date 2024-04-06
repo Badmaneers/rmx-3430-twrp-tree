@@ -25,7 +25,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, device/realme/oplus_mssi_64_cn/device.mk)
 
 # Inherit some common twrp stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# $(call inherit-product, vendor/aosp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := oplus_mssi_64_cn
