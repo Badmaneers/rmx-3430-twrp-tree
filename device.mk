@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/tecno/oplus_mssi_64_cn
+LOCAL_PATH := device/realme/oplus_mssi_64_cn
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
