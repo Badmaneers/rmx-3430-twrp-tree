@@ -29,7 +29,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := oplus_mssi_64_cn
-PRODUCT_NAME := twrp_oplus_mssi_64_cn
+PRODUCT_NAME := aosp_oplus_mssi_64_cn
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme Narzo 50a
 PRODUCT_MANUFACTURER := Realme
