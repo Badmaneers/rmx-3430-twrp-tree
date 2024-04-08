@@ -1,0 +1,2 @@
+add_lunch_combo aosp_oplus_mssi_64_cn-userdebug
+add_lunch_combo aosp_oplus_mssi_64_cn-eng
