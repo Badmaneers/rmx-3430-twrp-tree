@@ -18,7 +18,7 @@ before_script:
   - repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
   - repo sync
 script:
-  # Replace your $$USERNAME$$, $$REPO_URL$$, $$BRAND$$, $$DEVICE$$
+ # # Replace your $$USERNAME$$, $$REPO_URL$$, $$BRAND$$, $$DEVICE$$
   - cd $HOME/twrp/ && git clone https://github.com/Badmaneers/rmx-3430-twrp-tree.git device/realme/oplus_mssi_64_cn
     . build/envsetup.sh
     # Choose build flavor as "eng" or "userdebug"
