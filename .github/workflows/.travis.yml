@@ -8,10 +8,6 @@ addons:
   apt:
     update:
       - true
-services:
-  - docker
-before_install:
-  - docker pull fr3akyphantom/droid-builder:latest
 before_script:
   - cd $HOME && mkdir twrp
   - repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
