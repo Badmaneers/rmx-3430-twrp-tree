@@ -18,7 +18,6 @@ before_script:
   - repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
   - repo sync
 script:
-  # Replace your $$USERNAME$$, $$REPO_URL$$, $$BRAND$$, $$DEVICE$$
   - cd $HOME/twrp/ && git clone https://github.com/Badmaneers/rmx-3430-twrp-tree.git device/realme/oplus_mssi_64_cn
     . build/envsetup.sh
     # Choose build flavor as "eng" or "userdebug"
@@ -27,7 +26,6 @@ script:
     lunch aosp_oplus_mssi_64_cn-${BUILD_FLAVOR}
     make -j$(nproc --all) recoveryimage
     exit
-    EOF
 after_success:
   - export version=$(cat bootable/recovery/variables.h | grep "define TW_MAIN_VERSION_STR" | cut -d '"' -f2)
   - cp $HOME/twrp/out/target/product/$$DEVICE$$/recovery.img $HOME/twrp/TWRP-$version-$$DEVICE$$-$(date +"%Y%m%d")-Unofficial.img
